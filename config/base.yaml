@@ -1,0 +1,33 @@
+
+#type: args
+
+train:
+  epochs: 2
+  batch_size: 16
+  lr: 1.0e-3
+
+diffusion:
+  layers: 4 
+  channels: 64 
+  nheads: 8
+  diffusion_embedding_dim: 128
+  beta_start: 0.0001
+  beta_end: 0.5
+  num_steps: 30
+  schedule: "quad"
+
+model:
+  timeemb: 128
+  featureemb: 16
+  target_strategy: "random"
+
+others:
+  eval_length: 24
+  feature_num: 4
+  model_folder: ""
+  u_number: 3
+  dir_dataset: "./datasets"
+
+
+
+
