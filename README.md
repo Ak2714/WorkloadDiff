@@ -50,7 +50,7 @@ We are grateful for the valuable codes in the following GitHub repositories, whi
 - **DeepAR**: https://github.com/arrigonialberto86/deepar
 - **CSDI**: https://github.com/ermongroup/CSDI/tree/main
 - **N-BEATS**: https://github.com/philipperemy/n-beats/tree/master
-- vSARIMA**: https://github.com/krishnaik06/ARIMA-And-Seasonal-ARIMA/tree/master
+- **SARIMA**: https://github.com/krishnaik06/ARIMA-And-Seasonal-ARIMA/tree/master
 - **LSTNet**: https://github.com/laiguokun/LSTNet/tree/master
 - **WaveNet**: https://github.com/ZhouYuxuanYX/Wavenet-in-Keras-for-Kaggle-Competition-Web-Traffic-Time-Series-Forecasting/tree/master
 - **LSTM**: We implement an LSTM model by ourselves.
