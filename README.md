@@ -1,7 +1,8 @@
-# WorkloadDiff
+# WorkloadDiff (TCC 2024)
 
 
-The repository is the official implementation for the paper: WorkloadDiff: Conditional Denoising Diffusion Probabilistic Models for Cloud Workload Prediction
+# The repository is the official implementation for the paper: WorkloadDiff: Conditional Denoising Diffusion Probabilistic Models for Cloud Workload Prediction
+The repository is the official implementation for the paper: Weiping Zheng, Zongxiao Chen, Kaiyuan Zheng, Weijian Zheng, Yiqi Chen, Xiaomao Fan, "WorkloadDiff: Conditional Denoising Diffusion Probabilistic Models for Cloud Workload Prediction",  IEEE Transactions on Cloud Computing.
 
 We have devised a two-path neural network tailored for cloud workload prediction. This network consists of four residual layers, with bidirectional dilated convolution (Bi-DilConv) serving as the fundamental building block. 
 <div align=center>
