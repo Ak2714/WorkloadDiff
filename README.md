@@ -66,3 +66,12 @@ requested the source code via email.
 
 ## Citation
 
+```
+@article{zheng2024workloaddiff,
+  title={WorkloadDiff: Conditional Denoising Diffusion Probabilistic Models for Cloud Workload Prediction},
+  author={Zheng, Weiping and Chen, Zongxiao and Zheng, Kaiyuan and Zheng, Weijian and Chen, Yiqi and Fan, Xiaomao},
+  journal={IEEE Transactions on Cloud Computing},
+  year={2024},
+  publisher={IEEE}
+}
+```

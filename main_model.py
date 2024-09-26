@@ -153,7 +153,6 @@ class WorkloadDiff_base(nn.Module):
         return current_sample
 
     def impute(self, observed_data, cond_mask, n_samples, u_number):
-        is_resample = True
         B, K, L = observed_data.shape
         imputed_samples = torch.zeros(B, n_samples, K, L).to(self.device)
 
@@ -161,14 +160,11 @@ class WorkloadDiff_base(nn.Module):
             current_sample = torch.randn_like(observed_data)
             # 49 -> 0
             for t in range(self.num_steps - 1, -1, -1):
-                if is_resample:
-                    for u in range(1, u_number + 1, 1):
-                        # perform resampling
-                        current_sample = self.resample(observed_data, t, cond_mask, current_sample)
-                        if t > 0 and u < u_number:
-                            current_sample = self.undo(t, current_sample)
-                else:
-                    current_sample = self.reverse_sample(current_sample, observed_data, cond_mask, t)
+                for u in range(1, u_number + 1, 1):
+                    # perform resampling
+                    current_sample = self.resample(observed_data, t, cond_mask, current_sample)
+                    if t > 0 and u < u_number:
+                        current_sample = self.undo(t, current_sample)
             imputed_samples[:, i] = current_sample.detach()
         return imputed_samples
 
